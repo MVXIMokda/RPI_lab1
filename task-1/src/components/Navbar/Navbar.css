@@ -1,0 +1,5 @@
+.navbar { background: var(--heading); padding: 1rem 2rem; margin-bottom: 2rem; box-shadow: 0 2px 4px #0000001a; }
+.nav-buttons { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; }
+.nav-button.active { background: var(--button-hover); outline: 2px solid white; outline-offset: 3px; cursor: default; }
+.nav-button:not(.active):hover { background: var(--button-hover); }
+@media (max-width: 480px) { .navbar { padding: 1rem; margin-bottom: 0; } }

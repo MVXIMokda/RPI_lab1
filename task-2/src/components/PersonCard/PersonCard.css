@@ -1,0 +1,12 @@
+.person-card { min-width: 0; }
+.eyebrow { text-transform: uppercase; letter-spacing: .15em; font-size: .7rem; font-weight: 600; color: var(--muted); margin: 0 0 1.5rem; }
+.portrait { margin: 0; }
+.portrait img { width: 100%; height: auto; aspect-ratio: 4 / 5; object-fit: cover; object-position: center 22%; display: block; filter: grayscale(1); background: var(--surface); }
+.portrait figcaption { display: flex; flex-wrap: wrap; justify-content: space-between; gap: .5rem; padding: .75rem 0; font-size: .65rem; color: var(--muted); border-bottom: 1px solid var(--line); }
+.person-facts { padding-block: 1.5rem; }
+.full-name { margin: 0 0 .5rem; font-size: 1rem; font-weight: 600; }
+.person-dates { margin: 0; font-size: .8rem; color: var(--muted); }
+.person-fields { font-size: .85rem; line-height: 1.8; padding-block: .5rem; }
+.external-link { display: flex; align-items: center; justify-content: space-between; border-top: 1px solid var(--line); padding-top: 1rem; font-size: .8rem; text-decoration: none; }
+.external-link:hover { color: var(--accent); }
+@media (max-width: 700px) { .person-card { max-width: 100%; } .portrait img { max-height: 480px; object-position: center 25%; } .person-fields { display: none; } }

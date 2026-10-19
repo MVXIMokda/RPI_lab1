@@ -1,0 +1,12 @@
+.site-header { max-width: 1280px; padding: 1.5rem 2.5rem; margin: auto; display: flex; align-items: center; gap: 2.5rem; border-bottom: 1px solid var(--line); }
+.wordmark { text-decoration: none; font-family: Georgia, serif; font-size: 1.5rem; font-weight: bold; white-space: nowrap; margin-right: auto; }
+.wordmark > span:first-child { font-style: italic; font-weight: normal; }
+.wordmark-dot { color: var(--accent); }
+.site-header nav { display: flex; gap: 1.5rem; }
+.site-header nav a { text-decoration: none; font-size: .875rem; padding-block: .5rem; border-bottom: 1px solid transparent; }
+.site-header nav a:hover { color: var(--accent); border-color: currentColor; }
+.theme-toggle { display: flex; align-items: center; gap: .5rem; border: 1px solid var(--line); padding: .65rem .85rem; background: transparent; color: var(--ink); font-size: .8rem; white-space: nowrap; }
+.theme-toggle span { font-size: 1.15rem; line-height: 1; }
+.theme-toggle:hover { background: var(--surface); }
+@media (max-width: 800px) { .site-header { padding: 1.25rem; gap: 1rem; flex-wrap: wrap; } .site-header nav { order: 3; flex-basis: 100%; justify-content: space-between; gap: .75rem; } }
+@media (max-width: 360px) { .wordmark { font-size: 1.25rem; } .theme-toggle { font-size: .7rem; padding: .6rem; } }
